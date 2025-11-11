@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Institucional </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+  <section class="institucional">
+    <nav class="breadcrumb-int">
+      <a href="index.html">Início</a>
+      <span> > </span>
+      <a href="institucional.html">Institucional</a>
+      <span> > </span>
+      <span class="atual" id="paginaAtual"></span>
+    </nav>
+
+    <h2 class="titulo-int"> Institucional </h2>
+  
+    <div class="institucional-conteudo">
+
+    <!-- Menu dropdown para mobile -->
+      <div class="menu-mobile-int">
+        <select id="menuMobileSelect" onchange="selecionarOpcaoMobile(this.value)">
+          <option value="quem-int">Quem somos</option>
+          <option value="comprar-int">Como comprar</option>
+          <option value="entregas-int">Entregas</option>
+          <option value="pagamento-int">Formas de Pagamento</option>
+          <option value="contato-int">Fale Conosco</option>
+          <option value="poltpriv-int">Política de Privacidade</option>
+          <option value="frete-int">Simulador de Frete</option>
+        </select>
+      </div>
+
+      <div class="sidebar-int">
+        <ul>
+          <li class="active-int" onclick="mostrarConteudo('quem-int', this)">Quem somos</li>
+          <li onclick="mostrarConteudo('comprar-int', this)">Como comprar</li>
+          <li onclick="mostrarConteudo('entregas-int', this)">Entregas</li>
+          <li onclick="mostrarConteudo('pagamento-int', this)">Formas de Pagamento</li>
+          <li onclick="mostrarConteudo('contato-int', this)">Fale Conosco</li>
+          <li onclick="mostrarConteudo('poltpriv-int', this)">Política de Privacidade</li>
+          <li onclick="mostrarConteudo('frete-int', this)">Simulador de Frete</li>
+        </ul>
+      </div>
+
+      <div class="conteudo-int">
+        <div id="quem-int" class="conteudo-item-int ativo-int">
+          <h2>Quem Somos</h2>
+          <p> 
+          
+            <span style="color: var(--blue)"><strong> Propósito </strong></span>
+            <br><br>
+            Nosso propósito é oferecer uma experiência de compra online prática, segura e acessível,
+            proporcionando aos nossos clientes a conveniência de adquirir produtos de qualidade no conforto de suas casas.
+            <br><br>
+            <span style="color: var(--blue)"><strong> Princípios e Valores </strong></span>
+            <br><br>
+            • Compromisso com a qualidade dos produtos oferecidos.
+            <br>
+            • Atendimento ao cliente eficiente e amigável.
+            <br>
+            • Transparência nas informações sobre produtos e serviços.
+            <br>
+            • Valorização da diversidade e inclusão.
+            <br>
+            • Sustentabilidade e responsabilidade social.
+            <br><br>
+            <span style="color: var(--blue)"><strong> Visão </strong></span>
+            <br><br>
+            Ser reconhecido como o principal e-commerce de produtos essenciais,
+            destacando-se pela excelência no atendimento ao cliente e pela inovação constante em nossas operações.
+
+          </p>
+        </div>
+
+        <div id="comprar-int" class="conteudo-item-int">
+          <h2>Como Comprar</h2>
+          <p>
+            <strong> Passo a Passo: </strong>
+            <br><br>
+            <strong> 1. </strong> Clique no botão “Criar uma conta”, forneça seus dados e informe um e-mail e uma senha de acesso.
+            <br><br>
+            <strong> 2. </strong> Acesse sua conta escrevendo seu e-mail e senha na parte superior do site.
+            <br><br>
+            <strong> 3. </strong> Para iniciar uma compra, escolha uma categoria de produtos no menu superior.
+            <br><br>
+            <strong> 4. </strong> Clique no produto para acessar mais informações sobre ele (ingredientes e propriedades). Clique na imagem para ampliar
+            <br><br>
+            <strong> 5. </strong> É possível categorizar produtos, exibindo-os por preço (maior ou menor) ou padronizado. Você também poderá exibi-los na tela em forma de lista ou miniaturas.
+            <br><br>
+            <strong> 6. </strong> Para localizar rapidamente o que você precisa, procure pela lupa no canto superior da tela e digite o nome ou o tipo de produto no mecanismo “Buscar produtos...”.
+            <br><br>
+            <strong> 7. </strong> Escolha o produto, defina a quantidade e clique em “Comprar”.
+            <br><br>
+            <strong> 8. </strong> É possível alterar a quantidade do produto dentro do carrinho (Meu Carrinho), para isso basta clicar nos botões + e - ao lado da quantidade do produto. Para excluir o produto do carrinho (Minhas Compras) basta reduzir sua quantidade para 0.
+            <br><br>
+            <strong> 9. </strong> Conforme sua necessidade, escolha outros produtos. Lembre-se sempre de clicar em “Comprar” após a escolha de cada item.
+            <br><br>
+            <strong> 10. </strong> Clique no link “Minhas compras” para conferir os produtos que você comprou, o preço de cada um e o valor total de sua compra. 
+            <br><br>
+            <strong> 11. </strong> Ciente dos valores e produtos escolhidos, clique em “Finalizar Compra”.
+            <br><br>
+            <strong> 12. </strong> Mais uma vez você poderá consultar toda a sua compra, podendo adicionar ou remover algum produto. Em seguida, clique em “Continuar”.
+            <br><br>
+            <strong> 13. </strong> Selecione o endereço de entrega dos produtos e o tipo de entrega, informações simples para a definição do valor do frete. Em seguida, clique em “Continuar”. 
+            <br><br>
+            <strong> 14. </strong> Escolha a forma de pagamento e clique em “Continuar”.
+            <br><br>
+            <strong> 15. </strong> Confira, enfim, todos os detalhes de sua compra: valor, tipo de entrega, endereço de entrega, frete e forma de pagamento. É possível ainda adicionar mais produtos ao seu carrinho, se desejar. Para confirmação final, clique em “Concluir compra”.
+          </p>
+        </div>
+
+        <div id="entregas-int" class="conteudo-item-int">
+          <h2>Entregas</h2>
+          <p>
+            <strong> Entregas Delivery 4 faixas de horários disponíveis: </strong>
+            <br>
+            - 08h às 10h
+            <br>
+            - 10h às 12h
+            <br>
+            - 14h às 16h
+            <br>
+            - 16h às 18h
+            <br><br>
+            <strong> Entregas Retirada 4 faixas de horários disponíveis: </strong>
+            <br>
+            - 08h às 10h
+            <br>
+            - 10h às 12h
+            <br>
+            - 12h às 14h
+            <br>
+            - 14h às 16h
+            <br>
+            - 16h às 18h
+            <br><br>
+            <strong> Último horário de compra para o mesmo dia: 15h </strong>
+          </p>
+        </div>
+
+        <div id="pagamento-int" class="conteudo-item-int">
+          <h2>Formas de Pagamento</h2>
+          <p>
+            <span style="color: var(--blue)"><strong> Dinheiro </strong></span>
+            <br><br> 
+            • Tanto o pagamento em dinheiro, quanto a entrega do troco, são efetuadas no momento da entrega da compra em seu endereço.
+            <br><br>
+            <span style="color: var(--blue)"><strong> Cartão de Débito </strong></span>
+            <br><br>
+            • O pagamento com <strong> cartão de débito é realizado no momento da entrega</strong>.
+            <br>
+            • São aceitos os cartões Mastercard Maestro, Redeshop e Visa Electron.
+            <br><br>
+           <span style="color: var(--blue)"><strong> Cartão de Crédito </strong></span>
+            <br><br>
+            • O pagamento é feito no site durante a finalização da compra, de acordo com o valor da compra, o parcelamento poderá ser efetuado em até 3 vezes sem juros (Parcela mínima de R$ 50,00).
+            <br>
+            • São aceitos os cartões Mastercard, Visa, Amex, Elo e Dinner’s.
+            <br><br>
+            <span style="color: var(--blue)"><strong> Cartão Ticket Alimentação, Visa Vale, VR Alimentação e Sodexo. </strong></span>
+            <br><br>
+            • O pagamento com <strong> cartão alimentação é realizado no momento da entrega</strong>.
+            <br>
+            • Atenção, não recebemos em cartão refeição ou restaurante.
+            <br>
+            • São aceitos os cartões <strong> Visa Vale Alimentação, Ticket Alimentação, VR Alimentação, Sodexo Alimentação, Alelo e Policard Alimentação</strong>. 
+        </p>
+        </div>
+
+        <div id="contato-int" class="conteudo-item-int">
+          <h2>Fale Conosco</h2>
+            <div class="abas-contato">
+            <button class="aba-int ativa" onclick="mostrarAbaContato('contato-info', this)">Contato</button>
+            <button class="aba-int" onclick="mostrarAbaContato('contato-msg', this)">Mensagem</button>
+          </div>
+
+          <!-- Aba: Contato -->
+          <div id="contato-info" class="conteudo-aba-int ativo">
+            <div class="contato-opcoes">
+              <a href="mailto:mercado@email.com" class="cardlink-int">
+                <div class="card-contato">
+                  <i class="fa fa-envelope"></i>
+                    <h4>Contato por e-mail</h4>
+                      <p>Envie um e-mail para <b>mercado@email.com</b> e em breve retornaremos.</p>
+              </div>
+            </a>
+
+            <a href="tell:0000000000" class="cardlink-int">
+              <div class="card-contato">
+                <i class="fa fa-phone"></i>
+                  <h4>Telefone</h4>
+                    <p>(00) 0000-0000</p>
+                      <small>Para informações ou dúvidas sobre compras online.</small>
+              </div>
+            </a>
+
+            <a href="https://wa.me/5500000000000" target="_blank" class="cardlink-int">
+              <div class="card-contato">
+                <i class="fab fa-whatsapp fa-solid fa-lg"></i>
+                  <h4>WhatsApp</h4>
+                    <p>(00) 0000-0000</p>
+                      <small>Atendimento personalizado em tempo real.</small>
+              </div>
+            </a>
+          </div>
+        </div>
+
+            <!-- Aba: Mensagem -->
+          <div id="contato-msg" class="conteudo-aba-int">
+            <form class="form-mensagem">
+              <select required>
+                <option value="">Assunto*</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="sugestao">Sugestão</option>
+              </select>
+
+              <input type="text" placeholder="Nome*" required>
+              <input type="email" placeholder="E-mail*" required>
+              <input type="text" placeholder="Telefone">
+              <textarea placeholder="Explique mais sobre o motivo do contato*" required></textarea>
+
+              <p class="aviso">Os campos marcados com (*) são obrigatórios.</p>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="poltpriv-int" class="conteudo-item-int">
+          <h2>Política de Privacidade</h2>
+          <p>
+            Para fins de esclarecimento, é responsabilidade exclusiva do Lojista (i) confirmar que a sua Política de Privacidade (a) esteja em conformidade com a Lei 13.709/18 ("Geral de Proteção de Dados" ou "LGPD") e 
+            (b) atendam a todas as exigências legais e regulatórias aplicáveis ao tratamento de dados pessoais no contexto de atividade do Lojista; e 
+            (ii) cumprir com as obrigações previstas na LGPD e legislação de proteção de dados aplicável, 
+            bem como atender aos direitos dos titulares de dados pessoais. 
+            Os itens inseridos neste modelo de Política de Privacidade são apenas exemplos (finalidades de tratamento, tipos de dados coletados etc.). 
+            Será de responsabilidade exclusiva do lojista a definição e a inclusão de todas as finalidade de tratamento, 
+            bem como da inclusão de todos os dados coletados do titular que o lojista realizar, sendo o único responsável em caso de descumprimento das obrigações e dos princípios previstos na LGPD e legislação de proteção de dados aplicável.
+          </p>
+        </div>
+
+        <div id="frete-int" class="conteudo-item-int">
+          <h2>Simulador de Frete</h2>
+          <p>Informe seu CEP para saber o valor da taxa de serviço:</p>
+
+          <form id="freteForm" class="frete-form">
+    <input type="text" id="cep" name="cep" placeholder="CEP*" maxlength="9">
+    <button type="submit">Calcular</button>
+  </form>
+
+  <span id="erroCep" class="erro-cep" style="display: none;">CEP inválido</span>
+
+      <!--Exibir a cidade-->
+        <p id="resultadoCidade" class="resultado-cidade"></p>
+
+        <a href="https://buscacepinter.correios.com.br" target="_blank" class="link-cep">
+          Não sei meu CEP
+        </a>
+        </div>
+      </div>
+      
+      <a href="index.html" class="voltar-int">Voltar para o inicio</a>
+    
+    </div>
+    
+  </section>
+
+  <script src="js/institucional.js"></script>
+</body>
+
+</html>
